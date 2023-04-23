@@ -1,6 +1,6 @@
 {
   "name": "@biliblitz/libass-wasm",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "libass Subtitle Renderer and Parser library for browsers",
   "main": "./src/subtitles-octopus.js",
   "type": "module",
@@ -15,9 +15,6 @@
     "src",
     "index.d.ts"
   ],
-  "scripts": {
-    "publish": "npm publish"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/biliblitz/libass-wasm.git"
