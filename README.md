@@ -5,10 +5,22 @@
 - Added types
 - Removed most of direct DOM operations (make frontend framework happy)
 - Hard linked worker, wasm and font assets (make vite bundler happy)
+- No heavy emscripten build step! (only god knows how it works)
 
 fixes
 
 - fix: subtitle not render immediately after initialize.
+
+WARNING
+
+**You need some bundler like Vite to make this work**
+
+TL;DR: There is something like this in this repo.
+
+```
+import AssWorker from "./subtitles-octopus-worker.js?worker";
+import fallbackFont from "./assets/default.woff2?url";
+```
 
 ## Library
 
@@ -19,7 +31,7 @@ For Qwik usage, see [@biliblitz/player][].
 
 ## Usage
 
-Html structure
+Html structure (hope you know tailwindcss, styles are required)
 
 ```jsx
 <video ref={videoRef} />
