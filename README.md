@@ -58,6 +58,18 @@ useEffect(() => {
 }, []);
 ```
 
+**FINALLY: ADD `@biliblitz/libass-wasm` to `vite.config.ts`**
+
+```ts
+// vite.config.ts
+export default defineConfig({
+  optimizeDeps: {
+    exclude: ["@biliblitz/libass-wasm"],
+  },
+  // ...
+});
+```
+
 Now hope everything to work. GL&HF.
 
 ---
